@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page - Red Theme</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            background-color: #fff;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #800000; /* Dark red theme */
+            color: white;
+            height: 100vh;
+            padding: 20px 0;
+            position: fixed;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 15px 20px;
+            cursor: pointer;
+        }
+        .sidebar ul li:hover, .sidebar ul li.active {
+            background-color: #a52a2a; /* Lighter red for hover/active */
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .content h1 {
+            color: #800000; /* Dark red for headings */
+            margin-bottom: 20px;
+        }
+        .content p {
+            line-height: 1.6;
+        }
+        .sub-items {
+            margin-top: 20px;
+        }
+        .sub-items ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sub-items ul li {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-left: 5px solid #800000;
+        }
+        .quote {
+            background-color: #d3d3d3;
+            padding: 15px;
+            text-align: center;
+            font-style: italic;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>All Services</h2>
+        <ul>
+            <li class="active" onclick="showContent('cloud')">Cloud Service</li>
+            <li onclick="showContent('app')">Application Development</li>
+            <li onclick="showContent('web')">Web Development</li>
+            <li onclick="showContent('digital')">Digital Marketing</li>
+            <li onclick="showContent('salesforce')">Salesforce</li>
+            <li onclick="showContent('cyber')">Cyber Security</li>
+            <li onclick="showContent('data')">DataScience & Gen AI</li>
+            <li onclick="showContent('hardware')">Hardware & Networking</li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Cloud Service</h1>
+        <p>Our team of highly trained, diligent, and qualified specialists handles the strategy for cloud computing services. With ten years of expertise developing cloud-based apps, we are able to provide solutions that meet the various needs of our customers. We are skilled in offering full-cycle cloud application development services, including those for Azure and Amazon.</p>
+        <div class="sub-items">
+            <ul>
+                <li>Cloud Application Planning</li>
+                <li>Cloud Migration Planning</li>
+                <li>Migration Business Case</li>
+                <li>Data Migration Execution</li>
+                <li>Ongoing Upkeep</li>
+                <li>Customer Insights</li>
+            </ul>
+        </div>
+        <div class="quote">
+            “Transform your business landscape with the power of the cloud.”
+        </div>
+    </div>
+
+    <script>
+        function showContent(service) {
+            const content = document.querySelector('.content');
+            const sidebarItems = document.querySelectorAll('.sidebar ul li');
+            sidebarItems.forEach(item => item.classList.remove('active'));
+
+            let html = '';
+            switch(service) {
+                case 'cloud':
+                    document.querySelector('.sidebar li[onclick*="cloud"]').classList.add('active');
+                    html = `
+                        <h1>Cloud Service</h1>
+                        <p>Our team of highly trained, diligent, and qualified specialists handles the strategy for cloud computing services. With ten years of expertise developing cloud-based apps, we are able to provide solutions that meet the various needs of our customers. We are skilled in offering full-cycle cloud application development services, including those for Azure and Amazon.</p>
+                        <div class="sub-items">
+                            <ul>
+                                <li>Cloud Application Planning</li>
+                                <li>Cloud Migration Planning</li>
+                                <li>Migration Business Case</li>
+                                <li>Data Migration Execution</li>
+                                <li>Ongoing Upkeep</li>
+                                <li>Customer Insights</li>
+                            </ul>
+                        </div>
+                        <div class="quote">
+                            “Transform your business landscape with the power of the cloud.”
+                        </div>
+                    `;
+                    break;
+                case 'app':
+                    document.querySelector('.sidebar li[onclick*="app"]').classList.add('active');
+                    html = `
+                        <h1>Application Development</h1>
+                        <p>We offer end-to-end application development services tailored to your business needs, using the latest technologies.</p>
+                        <div class="sub-items">
+                            <ul>
+                                <li>Mobile App Development</li>
+                                <li>Custom Software Solutions</li>
+                                <li>UI/UX Design</li>
+                            </ul>
+                        </div>
+                    `;
+                    break;
+                // Add more cases for other services as needed
+                default:
+                    html = `<h1>${service.charAt(0).toUpperCase() + service.slice(1)}</h1><p>Content for ${service} is coming soon.</p>`;
+            }
+            content.innerHTML = html;
+        }
+        // Trigger initial content
+        showContent('cloud');
+    </script>
+</body>
+</html>
