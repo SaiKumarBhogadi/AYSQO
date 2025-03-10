@@ -2174,3 +2174,702 @@ body {
         font-size: 0.8rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Use Arial for simplicity */
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+/* About Solutions Section */
+.about-solutions {
+    padding: 50px 0; /* Full-width vertically, padding handled by wrapper */
+    background-color: #fff; /* White background to match your images */
+    color: #1a1a1a; /* Dark gray/black text */
+    width: 100%; /* Ensure full width */
+}
+
+/* Solutions Wrapper */
+.about-solutions-wrapper {
+    padding: 0 10%; /* 10% padding on left and right */
+    text-align: center;
+}
+
+/* Solutions Title */
+.about-solutions-title {
+    font-size: 3.5rem; /* Increased title size */
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #1a1a1a;
+}
+
+/* Solutions Filters */
+.about-solutions-filters {
+    margin-bottom: 30px;
+}
+
+.about-solutions-filter-btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0000; /* Red theme color */
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.about-solutions-filter-btn:hover,
+.about-solutions-filter-btn.active {
+    background-color: #cc0000; /* Darker red on hover/active */
+}
+
+/* Solutions Grid */
+.about-solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row on larger screens */
+    gap: 30px; /* Increased gap for larger layout */
+    padding: 0 10px; /* Additional inner padding */
+}
+
+/* Solutions Card */
+.about-solutions-card {
+    background-color: #fff; /* White card background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 15px; /* Increased rounded corners */
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-solutions-card:hover {
+    transform: translateY(-10px); /* Increased lift on hover */
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Solutions Image */
+.about-solutions-img {
+    width: 100%;
+    height: 200px; /* Increased image height */
+    object-fit: cover;
+    border-bottom: 2px solid #ddd; /* Increased border thickness */
+}
+
+/* Solutions Content */
+.about-solutions-content {
+    padding: 20px; /* Increased padding */
+    text-align: left;
+}
+
+/* Solutions Heading */
+.about-solutions-heading {
+    font-size: 1.5rem; /* Increased heading size */
+    font-weight: bold;
+    margin-bottom: 15px; /* Increased margin */
+    color: #1a1a1a;
+}
+
+/* Solutions Description */
+.about-solutions-description {
+    font-size: 1.1rem; /* Increased description size */
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px; /* Increased margin */
+}
+
+/* Solutions Read More */
+.about-solutions-readmore {
+    display: inline-block;
+    font-size: 1rem; /* Increased font size */
+    color: #ff0000; /* Red theme color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.about-solutions-readmore:hover {
+    color: #cc0000; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-solutions {
+        padding: 30px 0;
+    }
+
+    .about-solutions-title {
+        font-size: 3rem;
+    }
+
+    .about-solutions-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    }
+
+    .about-solutions-img {
+        height: 180px;
+    }
+
+    .about-solutions-heading {
+        font-size: 1.3rem;
+    }
+
+    .about-solutions-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-solutions {
+        padding: 20px 0;
+    }
+
+    .about-solutions-wrapper {
+        padding: 0 5%; /* Reduce to 5% on small screens */
+    }
+
+    .about-solutions-title {
+        font-size: 2.5rem;
+    }
+
+    .about-solutions-grid {
+        grid-template-columns: 1fr; /* 1 card per row on small screens */
+        gap: 20px;
+    }
+
+    .about-solutions-img {
+        height: 150px;
+    }
+
+    .about-solutions-heading {
+        font-size: 1.2rem;
+    }
+
+    .about-solutions-description {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+/* tecnoliges */
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Use Arial for simplicity */
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+/* Tech Technologies Section */
+.tech-technologies {
+    padding: 50px 0; /* Full-width vertically, padding handled by wrapper */
+    background-color: #fff; /* White background to match your images */
+    color: #1a1a1a; /* Dark gray/black text */
+    width: 100%; /* Ensure full width */
+}
+
+/* Tech Wrapper */
+.tech-technologies-wrapper {
+    padding: 0 10%; /* 10% padding on left and right */
+    text-align: center;
+}
+
+/* Tech Title */
+.tech-technologies-title {
+    font-size: 3.5rem; /* Increased title size */
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #1a1a1a;
+}
+
+/* Tech Filters */
+.tech-technologies-filters {
+    margin-bottom: 30px;
+}
+
+.tech-technologies-filter-btn {
+    padding: 12px 25px; /* Increased padding for larger buttons */
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0000; /* Red theme color */
+    color: #fff;
+    font-size: 1.1rem; /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tech-technologies-filter-btn:hover,
+.tech-technologies-filter-btn.active {
+    background-color: #cc0000; /* Darker red on hover/active */
+}
+
+/* Tech Grid */
+.tech-technologies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row on larger screens */
+    gap: 40px; /* Increased gap for larger layout */
+    padding: 0 10px; /* Additional inner padding */
+}
+
+/* Tech Item */
+.tech-technologies-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tech-technologies-item:hover {
+    transform: scale(1.05); /* Slight scale on hover for interactivity */
+}
+
+/* Tech Image */
+.tech-technologies-img {
+    width: 150px; /* Increased image width */
+    height: 150px; /* Increased image height */
+    object-fit: contain; /* Ensure full logo is visible */
+    border: 2px solid #ddd; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 15px; /* Increased margin */
+}
+
+/* Tech Label */
+.tech-technologies-label {
+    font-size: 1.2rem; /* Increased label size */
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .tech-technologies {
+        padding: 30px 0;
+    }
+
+    .tech-technologies-title {
+        font-size: 3rem;
+    }
+
+    .tech-technologies-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on medium screens */
+    }
+
+    .tech-technologies-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .tech-technologies-label {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tech-technologies {
+        padding: 20px 0;
+    }
+
+    .tech-technologies-wrapper {
+        padding: 0 5%; /* Reduce to 5% on small screens */
+    }
+
+    .tech-technologies-title {
+        font-size: 2.5rem;
+    }
+
+    .tech-technologies-grid {
+        grid-template-columns: 1fr; /* 1 item per row on small screens */
+        gap: 30px;
+    }
+
+    .tech-technologies-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .tech-technologies-label {
+        font-size :1rem;
+    }
+}
+
+
+
+
+/* careers */
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Use Arial for simplicity */
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+/* Careers Section */
+.careers-section {
+    padding: 50px 0; /* Full-width vertically, padding handled by wrapper */
+    background-color: #fff; /* White background to match your images */
+    color: #1a1a1a; /* Dark gray/black text */
+    width: 100%; /* Ensure full width */
+}
+
+/* Careers Wrapper */
+.careers-wrapper {
+    padding: 0 10%; /* 10% padding on left and right */
+    text-align: center;
+}
+
+/* Careers Title */
+.careers-title {
+    font-size: 3.5rem; /* Increased title size */
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #1a1a1a;
+}
+
+/* Careers Grid */
+.careers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row on larger screens */
+    gap: 30px; /* Increased gap for larger layout */
+    padding: 0 10px; /* Additional inner padding */
+}
+
+/* Careers Card */
+.careers-card {
+    background-color: #fff; /* White card background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 15px; /* Increased rounded corners */
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
+    padding: 20px; /* Increased padding */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.careers-card:hover {
+    transform: translateY(-10px); /* Increased lift on hover */
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Careers Heading */
+.careers-heading {
+    font-size: 1.5rem; /* Increased heading size */
+    font-weight: bold;
+    margin-bottom: 15px; /* Increased margin */
+    color: #1a1a1a;
+}
+
+/* Careers Detail */
+.careers-detail {
+    font-size: 1.1rem; /* Increased detail size */
+    color: #333;
+    margin-bottom: 10px; /* Increased margin */
+}
+
+/* Careers Description */
+.careers-description {
+    font-size: 1.1rem; /* Increased description size */
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px; /* Increased margin */
+}
+
+/* Careers Requirements */
+.careers-requirements {
+    font-size: 1.1rem; /* Increased requirements size */
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px; /* Increased margin */
+}
+
+/* Careers Apply */
+.careers-apply {
+    display: inline-block;
+    padding: 10px 20px; /* Increased padding */
+    font-size :1rem; /* Increased font size */
+    color: #fff;
+    background-color: #ff0000; /* Red theme color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.careers-apply:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .careers-section {
+        padding: 30px 0;
+    }
+
+    .careers-title {
+        font-size: 3rem;
+    }
+
+    .careers-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    }
+
+    .careers-heading {
+        font-size: 1.3rem;
+    }
+
+    .careers-detail,
+    .careers-description,
+    .careers-requirements {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .careers-section {
+        padding: 20px 0;
+    }
+
+    .careers-wrapper {
+        padding: 0 5%; /* Reduce to 5% on small screens */
+    }
+
+    .careers-title {
+        font-size :2.5rem;
+    }
+
+    .careers-grid {
+        grid-template-columns: 1fr; /* 1 card per row on small screens */
+        gap: 20px;
+    }
+
+    .careers-heading {
+        font-size: 1.2rem;
+    }
+
+    .careers-detail,
+    .careers-description,
+    .careers-requirements {
+        font-size: 0.9rem;
+    }
+
+    .careers-apply {
+        padding: 8px 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Use Arial for simplicity */
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 0; /* Full-width vertically, padding handled by wrapper */
+    background-color: #ff0000; /* Red theme background */
+    color: #fff; /* White text for contrast */
+    width: 100%; /* Ensure full width */
+}
+
+/* Contact Wrapper */
+.contact-wrapper {
+    padding: 0 10%; /* 10% padding on left and right */
+    text-align: center;
+}
+
+/* Contact Title */
+.contact-title {
+    font-size: 3.5rem; /* Increased title size */
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px; /* Space between form and info */
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between input fields */
+}
+
+.contact-input {
+    padding: 12px;
+    font-size: 1.1rem; /* Increased input font size */
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.contact-textarea {
+    padding: 12px;
+    font-size: 1.1rem; /* Increased textarea font size */
+    border: none;
+    border-radius: 5px;
+    height: 150px; /* Increased height */
+    resize: vertical;
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.contact-submit {
+    padding: 12px 25px; /* Increased padding */
+    font-size: 1.1rem; /* Increased button font size */
+    border: none;
+    border-radius: 5px;
+    background-color: #666; /* Gray button color */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-submit:hover {
+    background-color: #444; /* Darker gray on hover */
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1;
+    background-color: #cc0000; /* Darker red for contrast */
+    padding: 20px; /* Increased padding */
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info-title {
+    font-size: 1.5rem; /* Increased title size */
+    font-weight: bold;
+    margin-bottom: 15px; /* Increased margin */
+}
+
+.contact-info-detail {
+    font-size: 1.1rem; /* Increased detail size */
+    margin-bottom: 10px; /* Increased margin */
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contact-section {
+        padding: 30px 0;
+    }
+
+    .contact-title {
+        font-size: 3rem;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-info {
+        padding: 15px;
+    }
+
+    .contact-input,
+    .contact-textarea {
+        font-size: 1rem;
+    }
+
+    .contact-submit {
+        font-size: 1rem;
+    }
+
+    .contact-info-title {
+        font-size: 1.3rem;
+    }
+
+    .contact-info-detail {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 20px 0;
+    }
+
+    .contact-wrapper {
+        padding: 0 5%; /* Reduce to 5% on small screens */
+    }
+
+    .contact-title {
+        font-size: 2.5rem;
+    }
+
+    .contact-input,
+    .contact-textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-submit {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .contact-info-title {
+        font-size :1.2rem;
+    }
+
+    .contact-info-detail {
+        font-size: 0.9rem;
+    }
+}

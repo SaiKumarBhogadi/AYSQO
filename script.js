@@ -195,3 +195,68 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+// solutions 
+document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.about-solutions-filter-btn');
+    const cards = document.querySelectorAll('.about-solutions-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+
+            const filterValue = button.getAttribute('data-filter');
+
+            cards.forEach(card => {
+                if (filterValue === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    const category = card.getAttribute('data-category');
+                    if (category === filterValue) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        });
+    });
+});
+
+
+
+
+// technoloiges page
+document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.tech-technologies-filter-btn');
+    const items = document.querySelectorAll('.tech-technologies-item');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+
+            const filterValue = button.getAttribute('data-filter');
+
+            items.forEach(item => {
+                if (filterValue === 'all') {
+                    item.style.display = 'block';
+                } else {
+                    const category = item.getAttribute('data-category');
+                    if (category === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+        });
+    });
+});
